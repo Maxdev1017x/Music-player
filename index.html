@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxdev1017x">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+    <body>
+    <main class="container">
+        <h1 class="title">Music Player</h1>
+        <section class="player" aria-label="Music player controls">
+        <audio id="player" src="" controls></audio>
+        <div class="player__controls">
+            <button class="player__button player__button--play" aria-label="Play"></button>
+            <button class="player__button player__button--pause" aria-label="Pause"></button>
+        </div>
+        <div class="player__progress" aria-label="Progress bar">
+            <div class="player__progress-bar"></div>
+        </div>
+        </section>
+        <nav aria-label="Playlist">
+        <ul class="playlist">
+            <li class="playlist__item">
+                <a href="#" data-src="/src/songs/musicbyaden-alive.mp3">Música 1</a>
+            </li>
+
+            <li class="playlist__item">
+                <a href="#" data-src="/src/songs/musicbyaden-bliss.mp3">Música 2</a>
+            </li>
+
+            <li class="playlist__item">
+                <a href="#" data-src="/src/songs/musicbyaden-feel-good.mp3">Música 3</a>
+            </li>
+
+            <li class="playlist__item">
+                <a href="#" data-src="/src/songs/musicbyaden-jurgance-beach.mp3">Música 4</a>
+            </li>
+
+            <li class="playlist__item">
+                <a href="#" data-src="/src/songs/musicbyaden-tubebackr-limitless.mp3">Música 5</a>
+            </li>
+        </ul>
+        </nav>
+    </main>
+    <script src="./src/scripts/index.js"></script>
+    </body>
+</html>
